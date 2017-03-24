@@ -1,0 +1,49 @@
+---
+title: "Creatin Presentations and Report Writing: _Dynamically!_"
+author: "Justin Falardeau"
+date: "2017-03-22"
+output: 
+  ioslides_presentation:
+    toc: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+##Learning Goals
+
+* Static documents: what options are out there?
+    * A focus on markdown.
+* Dynamic documents: produce documents that integrate text with code for the analysis that the text presents.
+
+
+* Produce documents in a variety of output formats (HTML/PDF/Word)
+
+##Part 1: Static Documents
+
+In this section, we'll look at:
+
+* The types of static documents
+* Reproducibility of static documents
+
+##List
+
+
+
+1. Item 1
+2. Item 2
+
+But here is a trick
+
+2. Item 3
+
+##We built a linear regression model.
+
+```{r, echo = FALSE, fig.width = 3, fig.height=2, fig.align='center'}
+m1 <- lm(mpg ~ wt, data = mtcars)
+plot(m1)
+```
+
+The slope of the regression is `r coef(m1)[1]`.
