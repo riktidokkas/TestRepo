@@ -51,4 +51,6 @@ The slope of the regression is `r coef(m1)[1]`.
 
 ##New Slide
 
-Here we are adding a new slide
+Here we are adding a new slide.  
+
+Now I can edit it from the webpage
